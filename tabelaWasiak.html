@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+<title> WYKONAŁ WASIAK </title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Tryb jasny */
+    .light-mode {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    /* Tryb ciemny */
+    .dark-mode {
+        background-color: #727171;
+        color: #ffffff;
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Przyciski w trybie jasnym */
+    .light-mode button {
+        background-color: #f0f0f0;
+        color: #000000;
+    }
+
+    /* Przyciski w trybie ciemnym */
+    .dark-mode button {
+        background-color: #727171;
+        color: #000000;
+    }
+</style>
+</head>
+<body class="light-mode">
+
+<div style="text-align: center; margin-top: 50px;">
+    
+    <button id="toggleButton">Włącz Tryb Ciemny</button>
+</div>
+
+<script>
+    const toggleButton = document.getElementById('toggleButton');
+    const body = document.body;
+
+    // Funkcja przełączająca tryby
+    toggleButton.addEventListener('click', () => {
+        if (body.classList.contains('light-mode')) {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+            toggleButton.textContent = 'Włącz Tryb Jasny';
+        } else {
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
+            toggleButton.textContent = 'Włącz Tryb Ciemny';
+        }
+    });
+</script>
+
+</body>
+<fieldset>
+    <H1 ALIGN=center> <i> <font size="20"> <font color="red"> STRONA TABELI </i> <font color="black"> <font size="5"> </H1>
+    <center>
+            <body>
+                <table border=2>
+                 <caption>Dane Komputera Igor Wasiak </br> PROCESORY</caption>
+                 <thead>
+                 
+                 <tr>
+                    
+                        <th bgcolor="pink">NAZWA</th>
+                    
+                        <th bgcolor="blue">LICZBA RDZENI</th>
+                 <th bgcolor="gray">LICZBA WĄTKÓW</th>
+                 <td><center>TAKTOWANIE</center></td>
+                 <th bgcolor="yellow">TDP</th>
+                 <td>CENA</td>
+                 </tr>
+                 <tr>
+                
+                 <th bgcolor="pink">Intel Core i5-13600K</th>
+                 <th bgcolor="blue">14</th>
+                 <th bgcolor="gray">20</th>
+                 <td>3.5 GHz(5.1 GHz w trybie turbo)</td>
+                 <th bgcolor="yellow">125W</th>
+                 <td>1,149,00zł</td>
+                 </tr>
+                
+                 <tr>
+                    <th bgcolor="pink">Intel Core i7-13900KF</th>
+                    <th bgcolor="blue">16</th>
+                    <th bgcolor="gray">24</th>
+                    <td>3.4 GHz(5.4 GHz w trybie turbo)</td>
+                    <th bgcolor="yellow">125W</th>
+                    <td>1 699,00zł</td>
+                    </tr>
+                
+                    <tr>
+                        <th bgcolor="pink">Intel Core i9-13900KF</th>
+                        <th bgcolor="blue">24</th>
+                        <th bgcolor="gray">32</th>
+                        <td>3.0 GHz (5.8 GHz w trybie turbo)</td>
+                        <th bgcolor="yellow">125W</th>
+                        <td>2 099,00zł</td>
+                        </tr>
+                
+                        <tr>
+                            <th bgcolor="pink">Intel Core i5 14600K</th>
+                            <th bgcolor="blue">14</th>
+                            <th bgcolor="gray">20</th>
+                            <td>3.5 GHz (5.3 GHz w trybie turbo)</td>
+                            <th bgcolor="yellow">125W</th>
+                            <td>1 099,00zł</td>
+                            </tr>
+                
+                            <tr>
+                                <th bgcolor="pink">Intel Core i5-12500</th> 
+                                <th bgcolor="blue">6</th>
+                                <th bgcolor="gray">12</th>
+                                <td>3.0 GHz (4.6 GHz w trybie turbo)</td>
+                                <th bgcolor="yellow">65W</th>
+                                <td>869,00zł</td>
+                                </tr>
+                 </tbody>
+                </table>
+                </body>
+                </html>
+            </center>
+            <p>&copy; Wasiak | 28.10.2024</p>
